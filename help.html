@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center | World of Dance</title>
+    <link rel="stylesheet" href="rsc/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">    
+ 
+    <style>
+
+        :root {
+            --primary-accent: #ff2e63; 
+            --secondary-accent: #00ffc8;
+            --bg-dark: #050505;
+            --bg-panel: #121212;
+            --card-border: #333;
+        }
+        body {
+            background-color: #121212;
+            color: white;
+        }
+        
+        .navbar {
+            background: rgba(0, 0, 0, 0.9) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--primary-accent);
+            padding: 1.2rem 0;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(255, 46, 99, 0.5);
+            font-family: 'Oswald', sans-serif;
+        }
+        .nav-link {
+            color: #ccc !important;
+            font-weight: 600;
+            margin: 0 12px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: white !important;
+            text-shadow: 0 0 8px var(--secondary-accent);
+        }
+
+      
+        .accordion-item {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            color: white;
+        }
+        .accordion-button {
+            background-color: #252525;
+            color: var(--primary-accent);
+            font-weight: bold;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 1px;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #2a2a2a;
+            color: var(--secondary-accent);
+            box-shadow: none; 
+            border-bottom: 1px solid var(--secondary-accent);
+        }
+        .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(255, 46, 99, 0.25);
+        }
+        .accordion-body {
+            background-color: #121212;
+            color: #ccc;
+            border-top: none;
+        }
+
+      
+        .video-card {
+            border: 1px solid var(--card-border);
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+        .video-card-header {
+            background: linear-gradient(90deg, #1a1a1a, #000);
+            border-bottom: 2px solid var(--primary-accent);
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #999;
+            border-top: 1px solid #333;
+        }
+        .admin-avatar {
+            width: 90px;
+            height: 90px;
+            object-fit: cover; 
+            border: 2px solid var(--secondary-accent);
+            padding: 3px; 
+            box-shadow: 0 0 15px rgba(0, 255, 200, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .admin-avatar:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="index.html">DANCE<span style="color:var(--primary-accent)">WORLD</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="dance.html">Dance</a></li>
+                       <li class="nav-item"><a class="nav-link" href="dance_fund.html">Fundamentals</a></li>
+                    <li class="nav-item"><a class="nav-link " href="folk.html">Folk</a></li>
+                    <li class="nav-item"><a class="nav-link " href="hiphop.html">Hip-Hop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contemporaray.html">Contemporary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ballroom.html">Ballroom</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trends.html">Trends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="references.html">Refs</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="help.html">Help</a></li>
+                     <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container flex-grow-1" style="margin-top: 120px; margin-bottom: 80px;">
+        
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-white">How to Navigate</h1>
+            <p class="lead text-secondary">A visual guide to exploring the World of Dance.</p>
+        </div>
+
+       
+        <section class="row justify-content-center mb-5">
+            <div class="col-lg-10">
+                <div class="card video-card bg-dark">
+                    <div class="card-header video-card-header text-white py-3">
+                        <h5 class="m-0"><i class="fas fa-play-circle me-2" style="color:var(--secondary-accent)"></i> Website Tour & Tutorial</h5>
+                    </div>
+                    <div class="card-body p-0">
+                   
+                        <div class="ratio ratio-16x9 bg-black">
+                        
+                            <video controls poster="assets/help_poster.jpg" style="object-fit: cover;">
+                                <source src="assets/site_tour_tutorial.mp4" type="video/mp4">
+                                <div class="d-flex align-items-center justify-content-center h-100">
+                                    <p class="text-muted">Video Tutorial Placeholder</p>
+                                </div>
+                            </video>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-black text-secondary small text-center py-3">
+                        Watch this short video to learn how to access modules, dance histories, and trend reports.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-secondary my-5" style="opacity: 0.2;">
+
+      
+        <section class="row justify-content-center">
+            <div class="col-lg-8">
+                <h3 class="mb-4 text-center" style="color:var(--primary-accent);">Site Sections Guide</h3>
+                
+                <div class="accordion shadow-lg" id="helpAccordion">
+                    
+               
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 Home Page
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#helpAccordion">
+                            <div class="accordion-body">
+                                The <strong>Home Page</strong> is your central dashboard.
+                                <ul>
+                                    <li><strong>Hero Section:</strong> Quick introduction to the project.</li>
+                                    <li><strong>Dance Carousel:</strong> Links to specific genre pages like Hip Hop and Ballroom.</li>
+                                    <li><strong>Featurettes:</strong> Highlights of key sections like "Dance Fundamentals".</li>
+                                </ul>
+                                <em>Tip: Click the "World of DANCE" logo at the top left of any page to return here instantly.</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 Dances & Genres
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#helpAccordion">
+                            <div class="accordion-body">
+                                The <strong>Dances</strong> tab takes you to our genre library. From there, you can explore specific styles:
+                                <ul class="mt-2">
+                                    <li><strong><a href="folk.html" class="text-decoration-none text-info">Folk Dance</a>:</strong> History of Philippine and global folk dances.</li>
+                                    <li><strong><a href="hiphop.html" class="text-decoration-none text-info">Hip Hop</a>:</strong> The 4 pillars of Hip Hop culture (DJing, MCing, Breaking, Graffiti).</li>
+                                    <li><strong><a href="contemporaray.html" class="text-decoration-none text-info">Contemporary</a>:</strong> Techniques from Graham to Cunningham.</li>
+                                    <li><strong><a href="ballroom.html" class="text-decoration-none text-info">Ballroom</a>:</strong> Standard and Latin disciplines.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 Dance Fundamentals (Learning Module)
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#helpAccordion">
+                            <div class="accordion-body">
+                                This is the practical learning area. Navigate to <a href="dance_fund.html" class="text-info">Dance Fundamentals</a> to find:
+                                <ul class="mt-2">
+                                    <li><strong>Rhythm Videos:</strong> Introductory videos on musicality.</li>
+                                    <li><strong>Interactive Positions:</strong> A sticky video player on the left that demonstrates the 5 Fundamental Positions of Arms and Feet, with step-by-step text on the right.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                 Trends & Events
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#helpAccordion">
+                            <div class="accordion-body">
+                                Check the <a href="trends.html" class="text-info">Trends Page</a> to see what is currently happening in the dance world.
+                                <ul>
+                                    <li>Viral TikTok challenges affecting Folk Dance.</li>
+                                    <li>Modern competitive trends in Ballroom.</li>
+                                    <li>New fusion styles in Contemporary.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+               
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                 Technical Troubleshooting
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#helpAccordion">
+                            <div class="accordion-body">
+                                <strong>Video Playback Issues?</strong>
+                                <ol>
+                                    <li>Ensure you are using a modern browser (Chrome, Edge, Safari).</li>
+                                    <li>Check if the video is muted by default (click the speaker icon).</li>
+                                    <li>Videos on the Hip Hop page are set to autoplay when visible; scrolling quickly might pause them.</li>
+                                </ol>
+                                <strong>Missing Images?</strong>
+                                <p class="small ">If images appear as gray boxes, check your internet connection. We use placeholders if assets fail to load.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+  
+        <div class="row mt-5 pt-4 justify-content-center" >
+            <div class="col-lg-6 col-md-8">
+                <div class="text-center mb-3">
+                    <p class="text-secondary">Still need assistance? Reach out to our team.</p>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center p-4 rounded-3" 
+                     style="background-color: rgba(30, 30, 30, 0.6); border: 1px solid #333;">
+                    
+                    <div class="flex-shrink-0 me-4">
+                        <img src="assets/Admin/578265926_122141032118907288_5668448883323776322_n.jpg" 
+                             alt="Admin Profile" 
+                             class="rounded-circle admin-avatar">
+                    </div>
+
+                    <div class="flex-grow-1 text-start">
+                        <h4 class="mb-1 fw-bold" style="color: white; font-family: 'Oswald', sans-serif;">
+                            Neil O'brein Ocampo (Admin)
+                        </h4>
+                        <p class="mb-3 text-secondary small">
+                            <i class="fas fa-id-badge me-1" style="color:var(--primary-accent)"></i> Site Administrator & Support (22 years old, NBSB, Naka iPhone 16 Pro Max, LF Kasama Night Market )
+                        </p>
+                        
+                        <a href="https://www.facebook.com/share/17T2ECDxzZ/?mibextid=wwXIfr" 
+                           target="_blank" 
+                           class="btn btn-outline-light btn-sm rounded-pill px-4">
+                            <i class="fab fa-facebook-messenger me-2"></i>Contact Admin
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-secondary">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-secondary">© 2025 BSCS 2B Students</span>
+            </div>
+        </footer>
+    </div>  
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="rsc/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

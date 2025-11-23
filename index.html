@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance World - The Complete Experience</title>
+    <link rel="stylesheet" href="rsc/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <style>
+        :root {
+            --primary-accent: #ff2e63; 
+            --secondary-accent: #08d9d6; 
+            --bg-dark: #050505;
+            --bg-panel: #121212;
+            --card-border: #333;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 46, 99, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(8, 217, 214, 0.05) 0%, transparent 20%)}
+    
+.navbar {
+            background: rgba(0, 0, 0, 0.9) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--primary-accent);
+            padding: 1.2rem 0;
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(255, 46, 99, 0.5);
+        }
+
+        .nav-link {
+            color: #ccc !important;
+            font-weight: 600;
+            margin: 0 12px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: white !important;
+            text-shadow: 0 0 8px var(--secondary-accent);
+        }
+        .carousel {
+   height:100vh;
+ }
+
+        .hero-section {
+            height: 90vh;
+            background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-title {
+            font-size: 5rem;
+            font-weight: 800;
+            text-shadow: 4px 4px 0px var(--primary-accent);
+            margin-bottom: 20px;
+        }
+        .section-header {
+            margin-bottom: 60px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .section-header::after {
+            content: '';
+            display: block;
+            width: 60%;
+            height: 6px;
+            background: var(--primary-accent);
+            margin-top: 10px;
+        }
+
+        .page-section {
+            padding: 100px 0;
+            display: none;
+            animation: slideUp 0.8s ease-out;
+        }
+        .page-section.active { display: block; }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            background: #222;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 2px solid #333;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+        }
+        
+     
+
+
+        .pillar-card {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            border-left: 5px solid var(--secondary-accent);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .legend-item {
+            background: #222;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-left: 3px solid var(--primary-accent);
+            transition: 0.3s;
+        }
+        .legend-item:hover {
+            background: #333;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body class="n-0 p-0!important;">
+<nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="index.html">DANCE<span style="color:var(--primary-accent)">WORLD</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="dance.html">Dance</a></li>
+                       <li class="nav-item"><a class="nav-link" href="dance_fund.html">Fundamentals</a></li>
+                    <li class="nav-item"><a class="nav-link " href="folk.html">Folk</a></li>
+                    <li class="nav-item"><a class="nav-link " href="hiphop.html">Hip-Hop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contemporaray.html">Contemporary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ballroom.html">Ballroom</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trends.html">Trends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="references.html">Refs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+                     <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="home" class="page-section active p-0">
+        <div class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">RHYTHM & SOUL</h1>
+                <p class="lead text-light mb-5 fs-4">Explore the history, culture, and passion behind every move.</p>
+                
+            </div>
+        </div>
+        <div class=" row align-items-center container-fluid px-5 py-5 bg-black">
+            <div class="row align-items-center">
+                <div class="col-lg-6 ">
+                    <img style="margin-left: 40%;"src="assets/index/images/final.svg">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="display-4 fw-bold text-uppercase mb-4" style="color:var(--primary-accent)">The Project</h2>
+                    <p class="fs-5 text-light">This immersive platform is dedicated to showcasing the spectrum of dance. From the grounded roots of <strong>Folk</strong> to the urban rebellion of <strong>Hip Hop</strong>, the fluidity of <strong>Contemporary</strong>, and the structured elegance of <strong>Ballroom</strong>.</p>
+                    <p class="fs-5 ">We delve into history, tutorials, latest trends, and global events to promote dance as both an art form and a powerful cultural expression.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="category">
+<div class="container marketing mt-5 text-center">
+    <h1 class="text-center text-light mb-5">Explore more about Dances!</h1>
+       
+        <div class="row">
+          <div class="col-lg-3 text-light">
+            <h2>HipHop</h2>
+            <p>A dynamic dance style that emphasizes rhythm, freestyle, and urban culture.</p>
+            <p><a class="btn btn-danger" href="hiphop.html" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-3 text-light">
+            <h2>Folk Dance</h2>
+            <p>Traditional dances that reflect cultural heritage, community life, and storytelling.</p>
+            <p><a class="btn btn-danger" href="folkdance.html" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-3 text-light">
+
+            <h2>Ballroom</h2>
+            <p>Traditional dances that reflect cultural heritage, community life, and storytelling..</p>
+            <p><a class="btn btn-danger" href="ballroom.html" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-3 text-light">
+
+            <h2>Contemporary</h2>
+            <p>A fluid style blending ballet, modern, and jazz with emotional storytelling.</p>
+            <p><a class="btn btn-danger" href="contemporaray.html" role="button">View details &raquo;</a></p>
+          </div>
+        </div>
+</section>
+
+<hr class="featurette-divider">
+<div id="mouseLight" class="mouse-light"></div>
+
+<section class="Features">
+  <div class="container-fluid mt-5">
+        <div class="row featurette">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+            <h2 class="featurette-heading text-light fw-bold">Want to learn about Dance Fundamentals? <span class=" text-light">It'll blow your mind.</span></h2>
+            <p class="lead text-light">Dance is a superpower, once you learn the basics, you’ll move with confidence, style, and flair. From grooving to beats to gliding across the floor, the fundamentals unlock a whole new world of fun.</p>
+            <div class="text-center">
+                <p><a class="btn btn-danger mt-3" href="dance_fund.html" role="button">View details &raquo;</a></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="featurette-image img-fluid " src="assets/index/images/whitney-houston(wannadancewithsomebody).webp" alt="Generic placeholder image">
+          </div>
+        </div>
+<hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-6 order-md-2 text-light">
+            <h2 class="featurette-heading fw-bold">Live Events? We Got You! See for yourself.</h2>
+            <p class="lead">From dance battles to cultural showcases, our live events bring the energy front and center. Come for the moves, stay for the vibes, you won’t want to miss a beat.</p>
+            <div class="text-center">
+                <p><a class="btn btn-danger mt-3" href="dance.html" role="button">View details &raquo;</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 order-md-1">
+            <img  class="featurette-image img-fliud my-40" style="margin-left: 15%;" src="assets/index/images/fly-high-in-red.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-6">
+            <h2 class="featurette-heading text-light">Having Difficulty Navigating?<span class="text-light"> Click here for tutorials</span></h2>
+            <div class="text-center">
+                <p><a class="btn btn-danger mt-3" href="help.html" role="button">Website Tutorial &raquo;</a></p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <img class="featurette-image img-fluid mx-auto" src="assets/index/images/ultrasadperson.webp" alt="Generic placeholder image" style="box-shadow: 0px 0px 20px 10px #201f20; ">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+
+
+  </div>
+</section>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="#" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+        </a>
+        <span class="mb-3 mb-md-0 text-light">© 2025 BSCS 2B Students</span>
+      </div>
+    </footer>
+  </div>  
+ <script src="rsc/js/bootstrap.min.js"></script>
+</body>
+</html>
